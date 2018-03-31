@@ -1,0 +1,23 @@
+
+
+<!--Card-->
+  
+
+  <div class=" card hoa-detail"style="text-align:center">
+    <!--Card image-->
+    <div class="view overlay">
+        <img src="{{flower.img}}" class="img-fluid" alt="">
+        <a href="#">
+            <div class="mask rgba-white-slight"></div>
+        </a>
+    </div>
+    <!--Card content-->
+    <div class="card-body">
+        <!--Title-->
+        <h4 class="card-title">{{ flower.name }}</h4>
+        <!--Text-->
+        <p class="card-text">{{flower.description}}</p>
+        <p class="card-text">Giá:145.000đ</p>
+        <a (click)="onClick()" class="btn btn-primary">xem chi tiết</a>
+    
+ 
