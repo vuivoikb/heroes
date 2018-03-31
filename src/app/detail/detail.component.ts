@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { MessageService } from '../message.service';
+import { DataService } from '../data.service';
+
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -8,35 +11,13 @@ import { Component, OnInit } from '@angular/core';
 export class DetailComponent implements OnInit {
   flowerList:object [];
   title = "Hoa Bán Chạy";
-  constructor() { }
+  constructor(private messageService: MessageService,private dataService:DataService) { }
 
   ngOnInit() {
-    this.flowerList = [
-      {
-        name: "Hoa Sen",
-        price: "40000",
-        img: "assets/logo/1.jpg",
-        description: "Thanh khiết"
-      },
-      {
-        name: "Hoa Hong",
-        price: "50000",
-        img: "assets/logo/2.jpg",
-        description: "Ngọt ngào, nồng thắm"
-      },
-      {
-        name: "Hoa Păng-Xê",
-        price: "70000",
-        img: "assets/logo/3.jpg",
-        description: "Mê hoặc, quyến rũ"
-      },
-      {
-        name: "Cẩm Chướng",
-        price: "70000",
-        img: "assets/logo/4.jpg",
-        description: "Yêu Thương, tôn kính"
-      }
-  ];
+    this.flowerList=this.dataService.getList();
+  }
+  onDetail(flowerName:string){
+    this.messageService.showMessage(flowerName);
   }
 
 }

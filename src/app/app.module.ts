@@ -10,7 +10,8 @@ import { DetailComponent } from './detail/detail.component';
 import { HomeComponent } from './home/home.component';
 import { HoatuoiComponent } from './hoatuoi/hoatuoi.component';
 import { ShopComponent } from './shop/shop.component';
-
+import { MessageService } from './message.service';
+import { DataService } from './data.service';
 
 
 
@@ -31,7 +32,7 @@ import { ShopComponent } from './shop/shop.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ MessageService, DataService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

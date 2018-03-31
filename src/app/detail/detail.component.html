@@ -4,7 +4,7 @@
     <h3 class="card-header primary-color white-test">{{title}}</h3>
     <div class="card-body row">
       <div class="col-md-3" *ngFor="let flowerItem of flowerList">
-        <app-flower [flower]="flowerItem"(onDetail)="onDEtail($event)"></app-flower>
+        <app-flower [flower]="flowerItem"(onDetail)="onDetail($event)"></app-flower>
       </div>
     </div>
   </div>
