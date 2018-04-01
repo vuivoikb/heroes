@@ -14,7 +14,8 @@ export class DetailComponent implements OnInit {
   constructor(private messageService: MessageService,private dataService:DataService) { }
 
   ngOnInit() {
-    this.flowerList=this.dataService.getList();
+    this.dataService.getList("banchay")
+    .subscribe(res =>{this.flowerList=<object[]>res;});
   }
   onDetail(flowerName:string){
     this.messageService.showMessage(flowerName);

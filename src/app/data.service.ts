@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import {HttpClientModule, HttpClient} from '@angular/common/http'
 
 @Injectable()
 export class DataService {
 flowerList:object[]
-  constructor() { }
-getList(){
+  constructor(private httpClient:HttpClient) { }
+getList(type:string){
   this.flowerList = [
     {
       name: "Hoa Sen",
@@ -31,6 +32,7 @@ getList(){
       description: "Yêu Thương, tôn kính"
     }
 ];
-return this.flowerList;
+//return this.flowerList;
+return this.httpClient.get("http://localhost:3000/products?type="+type)
 }
 }
