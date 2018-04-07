@@ -1,37 +1,51 @@
 {
-    "products":[
-        {
-            "id":1,
-            "type":"hoatuoi",
-            "name": "Hoa Sen",
-            "price": "40000",
-            "img": "assets/logo/1.jpg",
-            "description": "Thanh khiết"
-        },
-        {
-            "id":2,
-            "name": "Hoa Hong",
-            "type":"banchay",
-            "price": "50000",
-            "img": "assets/logo/2.jpg",
-            "description": "Ngọt ngào, nồng thắm"
+  "products": [
+    {
+      "id": 1,
+      "type": "hoatuoi",
+      "name": "Hoa Sen",
+      "price": "40000",
+      "img": "assets/logo/1.jpg",
+      "description": "Thanh khiết"
     },
     {
-        "id":3,    
-        "name": "Hoa Păng-Xê",
-        "type":"hoatuoi",
-        
-            "price": "70000",
-            "img": "assets/logo/3.jpg",
-            "description": "Mê hoặc, quyến rũ"
+      "id": 2,
+      "name": "Hoa Hong",
+      "type": "banchay",
+      "price": "50000",
+      "img": "assets/logo/2.jpg",
+      "description": "Ngọt ngào, nồng thắm"
     },
     {
-        "id":4,    
-        "name": "Cẩm Chướng",
-            "price": "70000",
-            "img": "assets/logo/4.jpg",
-            "description": "Yêu Thương, tôn kính"
+      "id": 3,
+      "name": "Hoa Păng-Xê",
+      "type": "hoatuoi",
+      "price": "70000",
+      "img": "assets/logo/3.jpg",
+      "description": "Mê hoặc, quyến rũ"
+    },
+    {
+      "id": 4,
+      "name": "Cẩm Chướng",
+      "price": "70000",
+      "img": "assets/logo/4.jpg",
+      "description": "Yêu Thương, tôn kính"
+    },
+    {
+      "name": "cc",
+      "type": "cc",
+      "price": "033",
+      "img": "33",
+      "description": "33",
+      "id": 5
+    },
+    {
+      "name": "Hoa Hong",
+      "type": "hoatuoi",
+      "price": "033",
+      "img": "33",
+      "description": "33",
+      "id": 6
     }
-        
-    ]
+  ]
 }
