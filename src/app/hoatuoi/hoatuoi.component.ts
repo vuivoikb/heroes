@@ -11,6 +11,9 @@ export class HoatuoiComponent implements OnInit {
   constructor(private messageService: MessageService,private dataService:DataService) { }
   flowerList:object [];
   title = "Hoa tuoi";
+  getList(type:string){
+    
+  }
   ngOnInit() {
     this.dataService.getList("hoatuoi")
     .subscribe(res => {this.flowerList=<object[]>res;})

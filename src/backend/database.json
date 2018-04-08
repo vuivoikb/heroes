@@ -6,7 +6,8 @@
       "name": "Hoa Sen",
       "price": "40000",
       "img": "assets/logo/1.jpg",
-      "description": "Thanh khiết"
+      "description": "Thanh khiết",
+      "isdeleted": 0
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "type": "banchay",
       "price": "50000",
       "img": "assets/logo/2.jpg",
-      "description": "Ngọt ngào, nồng thắm"
+      "description": "Ngọt ngào, nồng thắm",
+      "isdeleted": 0
     },
     {
       "id": 3,
@@ -22,30 +24,40 @@
       "type": "hoatuoi",
       "price": "70000",
       "img": "assets/logo/3.jpg",
-      "description": "Mê hoặc, quyến rũ"
+      "description": "Mê hoặc, quyến rũ",
+      "isdeleted": 1
     },
     {
       "id": 4,
       "name": "Cẩm Chướng",
       "price": "70000",
       "img": "assets/logo/4.jpg",
-      "description": "Yêu Thương, tôn kính"
+      "description": "Yêu Thương, tôn kính",
+      "isdeleted": 0
     },
     {
-      "name": "cc",
-      "type": "cc",
-      "price": "033",
-      "img": "33",
-      "description": "33",
+      "name": "hoa hong",
+      "type": "hoatuoi",
+      "price": "10000",
+      "img": "",
+      "description": "dep",
       "id": 5
     },
     {
-      "name": "Hoa Hong",
-      "type": "hoatuoi",
-      "price": "033",
-      "img": "33",
-      "description": "33",
+      "name": "",
+      "type": "",
+      "price": 0,
+      "img": "",
+      "description": "",
       "id": 6
+    },
+    {
+      "name": "",
+      "type": "",
+      "price": 0,
+      "img": "",
+      "description": "",
+      "id": 7
     }
   ]
 }

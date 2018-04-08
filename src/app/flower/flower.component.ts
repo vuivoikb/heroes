@@ -25,10 +25,10 @@ console.log(this.flower)
 
 
   onClick() {
-    this.onDetail.emit(this.flower.name);
-    //let str = "Ten:" + this.flower.name + "\n";
-    //str += "Mo ta: " + this.flower.description ;
-    //alert(str);
+    //this.onDetail.emit(this.flower.name);
+    let str = "Ten:" + this.flower.name + "\n";
+    str += "Mo ta: " + this.flower.description ;
+    alert(str);
   }
 
 }

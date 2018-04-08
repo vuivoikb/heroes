@@ -14,6 +14,7 @@ import { ShopComponent } from './shop/shop.component';
 import { MessageService } from './message.service';
 import { DataService } from './data.service';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { QuanlyComponent } from './quanly/quanly.component';
 
 
 
@@ -27,6 +28,7 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
     HoatuoiComponent,
     ShopComponent,
     ProductManagerComponent,
+    QuanlyComponent,
    
    
   ],

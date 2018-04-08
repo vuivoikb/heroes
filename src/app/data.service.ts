@@ -5,10 +5,12 @@ import {HttpClientModule, HttpClient} from '@angular/common/http'
 export class DataService {
 flowerList:object[]
   constructor(private httpClient:HttpClient) { }
-  getList(type:string){
+  getList(type?:string){
 //return this.flowerList;
-    return this.httpClient.get("http://localhost:3000/products?type="+type)
-  }
+   if(type !=undefined){ return this.httpClient.get("http://localhost:3000/products?type="+type)
+  }else{
+    return this.httpClient.get("http://localhost:3000/products");
+  }}
 
   insertData (data:object) {
     return this.httpClient.post("http://localhost:3000/products",data);
