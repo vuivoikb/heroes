@@ -1,0 +1,115 @@
+
+
+<div class="container-fluid">
+  <h3 class="card-header primary-color white-test">{{title}}</h3>
+
+
+<div class="row">
+      
+  <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+    
+    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-plus mt-0"></i></button>
+    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-pencil mt-0"></i></button>
+    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-remove mt-0"></i></button>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    </div>
+  <form class="form-inline">
+        <input class="form-control " type="text" placeholder="Tìm kiếm sản phẩm" style="max-width: 300px;">
+        <button class="btn btn-sm btn-primary "><i class="fa fa-search"></i>  </button>
+    </form>
+    
+  </div>
+<!--/Card image-->
+
+<div class="px-4">
+
+<div class="table-wrapper">
+    <!--Table-->
+    <table class="table table-hover mb-0">
+
+        <!--Table head-->
+        <thead>
+            <tr>
+                <th>
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="mr-2 label-table"></label>
+                </th>
+                <th class="th-lg"><a>Tên sản phẩm <i class="fa fa-sort ml-1"></i></a></th>
+                <th class="th-lg"><a href="">Loại sản phẩm<i class="fa fa-sort ml-1"></i></a></th>
+                <th class="th-lg"><a href="">Giá sản phẩm<i class="fa fa-sort ml-1"></i></a></th>
+                <th class="th-lg"><a href="">Hình ảnh<i class="fa fa-sort ml-1"></i></a></th>
+                <th class="th-lg"><a href="">Mô tả<i class="fa fa-sort ml-1"></i></a></th>
+               
+            </tr>
+        </thead>
+        <!--Table head-->
+
+        <!--Table body-->
+        <tbody>
+            <tr *ngFor="let product of dataList">
+              <th scope="row">
+                <input type ="checkbox" id="checkbox2">
+                <label for="checkbox2" class="label-table"></label>
+
+              </th>
+              <td>{{product.name}}</td>
+              <td>{{product.type1}}</td>
+              <td>{{product.price}}</td>
+              <td>{{product.img}}</td>
+              <td>{{product.description}}</td>
+            </tr>
+        </tbody>
+        <!--Table body-->
+    </table>
+    <!--Table-->
+</div>
+
+<hr class="my-0">
+
+<!--Bottom Table UI-->
+<div class="d-flex justify-content-between">
+
+   
+    <!--Pagination -->
+    <nav class="my-4">
+        <ul class="pagination pagination-circle pg-blue mb-0">
+
+            <!--First-->
+            <li class="page-item disabled"><a class="page-link">First</a></li>
+
+            <!--Arrow left-->
+            <li class="page-item disabled">
+                <a class="page-link" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+                <span class="sr-only">Previous</span>
+            </a>
+            </li>
+
+            <!--Numbers-->
+            <li class="page-item active"><a class="page-link">1</a></li>
+            <li class="page-item"><a class="page-link">2</a></li>
+            <li class="page-item"><a class="page-link">3</a></li>
+            <li class="page-item"><a class="page-link">4</a></li>
+            <li class="page-item"><a class="page-link">5</a></li>
+
+            <!--Arrow right-->
+            <li class="page-item">
+                <a class="page-link" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+            </li>
+
+            <!--First-->
+            <li class="page-item"><a class="page-link">Last</a></li>
+
+        </ul>
+    </nav>
+    <!--/Pagination -->
+
+</div>
+<!--Bottom Table UI-->
+
+</div>
+</div>

@@ -1,0 +1,36 @@
+
+ <div class="card"style="width:500px;
+;" >
+<form  role="form" class="center" routerLink="/admin" >
+  
+   
+      <h3 class="card-header primary-color white-test">{{title}}</h3>
+  <div class="md-form ">
+    <label for="name">Tên sản phẩm</label>
+    <input type="text" [(ngModel)]="data.name" class="form-control" name="name" placeholder="">
+  </div>
+  <div class="md-form">
+    <label for="type" data-error="Invalid">Loại sản phẩm</label>
+    <input type="text" [(ngModel)]="data.type" class="form-control" name="type" placeholder="">
+  </div>
+
+  <div class="md-form">
+    <label for="price"data-error="Invalid">giá sản phẩm</label>
+    <input type="text" [(ngModel)]="data.price" class="form-control" name="price" placeholder="">
+  </div>
+
+  <div class="md-form">
+    <label for="img"data-error="Invalid">hình ảnh</label>
+    <input type="text" [(ngModel)]="data.img"class="form-control" name="img" placeholder="">
+  </div>
+  <div class="md-form">
+    <label for="description"data-error="Invalid">mô tả</label>
+    <input type="text"[(ngModel)]="data.description" class="form-control" name="description" placeholder="">
+  </div>
+
+  <button type="submit"  class="btn btn-primary" (click)="onClick()">Lưu</button>
+
+
+</form>
+</div>
+
