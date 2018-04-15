@@ -5,6 +5,9 @@ import {HttpClientModule, HttpClient} from '@angular/common/http'
 export class DataService {
 flowerList:object[]
   constructor(private httpClient:HttpClient) { }
+  getOne(id: Number){
+    return this.httpClient.get("http://localhost:3000/products?id="+id);
+  }
   getList(type?:string){
 //return this.flowerList;
    if(type !=undefined){ return this.httpClient.get("http://localhost:3000/products?type="+type)
@@ -15,10 +18,10 @@ flowerList:object[]
   insertData (data:object) {
     return this.httpClient.post("http://localhost:3000/products",data);
   }
-  updateData(data:object){
+  updateData(id:Number,data:object){
     return this.httpClient.put("http://localhost:3000/products",data);
   }
   removeData(id: Number){
-    return this.httpClient.delete("http://localhost:3000/products/"+id)
+    return this.httpClient.delete("http://localhost:3000/products/"+id);
   }
 }

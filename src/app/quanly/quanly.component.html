@@ -8,9 +8,9 @@
       
   <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
     
-    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-plus mt-0"></i></button>
-    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-pencil mt-0"></i></button>
-    <button type="button" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-remove mt-0"></i></button>
+    <button type="button" (click)="create($event)"class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-plus mt-0"></i></button>
+    <button type="button" (click)="edit($event)" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-pencil mt-0"></i></button>
+    <button type="button"(click)="remove($event)" class="btn btn-outline-primary btn-rounded btn-sm px-2"><i class="fa fa-remove mt-0"></i></button>
     </div>
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
     </div>
@@ -32,7 +32,7 @@
         <thead>
             <tr>
                 <th>
-                    <input type="checkbox" id="checkbox">
+                    <input type="checkbox"  id="checkbox">
                     <label for="checkbox" class="mr-2 label-table"></label>
                 </th>
                 <th class="th-lg"><a>Tên sản phẩm <i class="fa fa-sort ml-1"></i></a></th>
@@ -47,14 +47,14 @@
 
         <!--Table body-->
         <tbody>
-            <tr *ngFor="let product of dataList">
+            <tr *ngFor="let product of currentDataList">
               <th scope="row">
-                <input type ="checkbox" id="checkbox2">
+                <input type ="checkbox" (click)="selectRow($event, product)" id="checkbox2">
                 <label for="checkbox2" class="label-table"></label>
 
               </th>
               <td>{{product.name}}</td>
-              <td>{{product.type1}}</td>
+              <td>{{product.type}}</td>
               <td>{{product.price}}</td>
               <td>{{product.img}}</td>
               <td>{{product.description}}</td>
@@ -87,12 +87,10 @@
             </li>
 
             <!--Numbers-->
-            <li class="page-item active"><a class="page-link">1</a></li>
-            <li class="page-item"><a class="page-link">2</a></li>
-            <li class="page-item"><a class="page-link">3</a></li>
-            <li class="page-item"><a class="page-link">4</a></li>
-            <li class="page-item"><a class="page-link">5</a></li>
-
+           
+            <li *ngFor="let index of paginator.pageList" class="page-item" [ngClass]="{'active':index==paginator.currentPage}">    
+                <a class="page-link" (click)="paginationHandle(index)">{{index}}</a>
+            </li>
             <!--Arrow right-->
             <li class="page-item">
                 <a class="page-link" aria-label="Next">

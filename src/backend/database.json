@@ -10,15 +10,6 @@
       "isdeleted": 0
     },
     {
-      "id": 2,
-      "name": "Hoa Hong",
-      "type": "banchay",
-      "price": "50000",
-      "img": "assets/logo/2.jpg",
-      "description": "Ngọt ngào, nồng thắm",
-      "isdeleted": 0
-    },
-    {
       "id": 3,
       "name": "Hoa Păng-Xê",
       "type": "hoatuoi",
@@ -44,20 +35,36 @@
       "id": 5
     },
     {
-      "name": "",
-      "type": "",
-      "price": 0,
-      "img": "",
-      "description": "",
-      "id": 6
+      "id": 6,
+      "name": "hoa hong",
+      "type": "banchay",
+      "price": "40000",
+      "img": "assets/logo/3.jpg",
+      "description": "quyen ru"
     },
     {
-      "name": "",
-      "type": "",
-      "price": 0,
-      "img": "",
-      "description": "",
-      "id": 7
+      "id": 7,
+      "name": "hoa hong",
+      "type": "banchay",
+      "price": "10000",
+      "img": "hoa",
+      "description": "dep"
+    },
+    {
+      "id": 8,
+      "name": "hoa sen",
+      "type": "banchay",
+      "price": "111111",
+      "img": "qq11",
+      "description": "ald;adsa"
+    },
+    {
+      "id": 9,
+      "name": "hh",
+      "type": "banchay",
+      "price": "11213213",
+      "img": "321",
+      "description": "321321"
     }
   ]
 }

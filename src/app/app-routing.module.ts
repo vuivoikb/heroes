@@ -7,12 +7,14 @@ import{HomeComponent} from './home/home.component';
 import{HoatuoiComponent} from './hoatuoi/hoatuoi.component';
 import{ShopComponent} from './shop/shop.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { QuanlyComponent } from './quanly/quanly.component';
 
 const routes:Routes =[
   { path:'home',component:HomeComponent },
   { path:'hoatuoi',component:HoatuoiComponent },
   { path:'shop',component:ShopComponent },
-  { path:'admin',component:ProductManagerComponent }
+  { path:'admin',component:ProductManagerComponent },
+  { path:'quanly',component:QuanlyComponent }
 ]
 
 @NgModule({
