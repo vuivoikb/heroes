@@ -21,7 +21,8 @@
       "styles": [
         "../node_modules/mdbootstrap/css/bootstrap.css",
         "../node_modules/mdbootstrap/css/mdb.min.css",
-        "styles.css"
+        "styles.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css"
       ],
       "scripts": [
         "../node_modules/mdbootstrap/js/jquery-3.2.1.min.js",
